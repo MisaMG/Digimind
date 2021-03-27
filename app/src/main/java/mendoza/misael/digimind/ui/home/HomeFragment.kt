@@ -9,7 +9,6 @@ import android.widget.BaseAdapter
 import android.widget.GridView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import mendoza.misael.digimind.R
 import mendoza.misael.digimind.ui.Task
@@ -49,14 +48,12 @@ class HomeFragment : Fragment() {
 
     fun fillTasks(){
         tasks.add(Task("Practice 1", arrayListOf("Monday", "Sunday"), "17:20"))
-        tasks.add(Task("Practice 2", arrayListOf("Monday", "Tuesday"), "09:20"))
-        tasks.add(Task("Practice 3", arrayListOf("Thursday", "Friday"), "14:20"))
-        tasks.add(Task("Practice 4", arrayListOf("Tuesday", "Wednesday"), "19:20"))
-        tasks.add(Task("Practice 5", arrayListOf("Monday", "Tuesday"), "11:00"))
-        tasks.add(Task("Practice 6", arrayListOf("Wednesday"), "19:00"))
-        tasks.add(Task("Practice 7", arrayListOf("Monday", "Wednesday"), "17:30"))
-        tasks.add(Task("Practice 8", arrayListOf("Tuesday", "Thursday"), "10:00"))
-        tasks.add(Task("Practice 9", arrayListOf("Tuesday", "Thursday"), "19:30"))
+        tasks.add(Task("Practice 2", arrayListOf("Thursday", "Friday"), "14:20"))
+        tasks.add(Task("Practice 3", arrayListOf("Tuesday", "Wednesday"), "19:20"))
+        tasks.add(Task("Practice 4", arrayListOf("Wednesday"), "19:00"))
+        tasks.add(Task("Practice 5", arrayListOf("Monday", "Wednesday"), "17:30"))
+        tasks.add(Task("Practice 6", arrayListOf("Tuesday", "Thursday"), "10:00"))
+        tasks.add(Task("Practice 7", arrayListOf("Tuesday", "Thursday"), "19:30"))
     }
 
     private class AdaptadorTareas: BaseAdapter {
@@ -89,9 +86,9 @@ class HomeFragment : Fragment() {
             var tv_days: TextView = vista.findViewById(R.id.tv_days)
             var tv_time: TextView = vista.findViewById(R.id.tv_time)
 
-            tv_title.setText(task.title)
-            tv_time.setText(task.time)
-            tv_days.setText(task.days.toString())
+            tv_title.text = task.title
+            tv_time.text = task.time
+            tv_days.text = task.days.toString()
 
             return vista
         }
