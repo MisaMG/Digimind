@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "304459015979",
+    "project_id": "digimind-e506b",
+    "storage_bucket": "digimind-e506b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304459015979:android:103e8fc4be104fc985c76e",
+        "android_client_info": {
+          "package_name": "com.example.digimind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304459015979-4tmq4rsmcoblen7soj238fv0pu8dic9u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.digimind",
+            "certificate_hash": "b6f317a4317bd416daaf9f6bc54b450d00ce80a4"
+          }
+        },
+        {
+          "client_id": "304459015979-3qtds4e5d14vd3gj97bri8gr45js8tev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2gpcSPoWTB27QsrCmmgpoW1RKZvWU19s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304459015979-3qtds4e5d14vd3gj97bri8gr45js8tev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
